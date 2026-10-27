@@ -1,0 +1,25 @@
+/* SUSTAINX | DASHBOARD: streak card, level card, XP bar, tracker page */
+/* ===== 3. STREAK, LEVEL & XP BAR ===== */
+.top{display:grid;grid-template-columns:1fr 2fr;gap:16px;margin-top:16px}
+.streak{background:var(--butter);padding:16px}.streak b{font-size:3rem;line-height:1}
+.lvl{background:var(--sky);padding:16px}
+.bar{height:20px;border:3px solid var(--ink);border-radius:99px;background:var(--card);overflow:hidden;margin-top:10px}
+.bar i{display:block;height:100%;background:var(--green);transition:width .5s}
+.row{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+/* ===== 4. TRACKER: ACTIONS, BADGES, LEADERBOARD, HISTORY ===== */
+.cols{display:grid;grid-template-columns:2fr 1fr;gap:16px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.act{font:inherit;color:var(--ink);text-align:center;padding:16px 6px;border:3px solid var(--ink);border-radius:18px;box-shadow:4px 4px 0 var(--ink);cursor:pointer;transition:transform .1s,box-shadow .1s}
+.act:active{transform:translate(4px,4px);box-shadow:0 0 0 var(--ink)}
+.act span{display:block;font-size:2rem}.act b{display:block}.act small{border:2px solid var(--ink);border-radius:8px;padding:0 6px;background:var(--card)}
+.side{padding:14px;margin-bottom:16px}
+.badges{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.badge{border:2px solid var(--ink);border-radius:99px;padding:3px 10px;background:var(--pink);font-weight:600;font-size:.85rem}
+.badge.lock{background:none;border-style:dashed;opacity:.6}
+.lb{list-style:none;margin:8px 0 0;padding:0}
+.lb li{display:flex;gap:8px;padding:8px 10px;border-radius:12px;font-weight:600}
+.lb li span:nth-child(2){margin-right:auto}
+.lb .me{background:var(--butter);border:2px solid var(--ink)}
+.hist{padding:8px 14px;max-height:230px;overflow:auto}
+.hist div{display:flex;justify-content:space-between;padding:6px 0;border-bottom:2px dashed var(--lilac)}
+.hist em{color:var(--green);font-style:normal;font-weight:800}

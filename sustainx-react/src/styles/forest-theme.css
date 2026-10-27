@@ -1,0 +1,23 @@
+/* SUSTAINX | FOREST THEME: tree scene, game-style cards, dark mode */
+/* ===== 7. FOREST THEME: TREE SCENE, GAME-STYLE CARDS, DARK MODE ===== */
+:root{--bg:#eafaf0;--ink:#26332e;--card:#fffdf8;--sky1:#c9ecff;--sky2:#eafaf0;--mint:#c4f3d8;--pink:#ffcfe3;--lilac:#e2d6ff;--sky:#c5e8ff;--butter:#fff1b0}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14261f;--ink:#f1fbf4;--card:#22332b;--sky1:#1b2a4a;--sky2:#14261f;--mint:#2d6b52;--pink:#8a3d68;--lilac:#3b4d7a;--sky:#2f5f8a;--butter:#8a7a2c}body::after{opacity:.2!important}}
+body{background-image:linear-gradient(var(--sky1),var(--sky2) 60%);background-size:auto;background-attachment:fixed}
+body::after{content:"";position:fixed;left:0;right:0;bottom:0;height:90px;z-index:-1;pointer-events:none;opacity:.8;background:radial-gradient(120% 100% at 20% 100%,#9be3b0 55%,transparent 56%),radial-gradient(120% 100% at 80% 100%,#7fd69a 55%,transparent 56%)}
+.box{border-radius:24px;box-shadow:0 6px 0 var(--ink)}
+nav{border-radius:99px;padding:8px 12px}nav button.on{background:var(--leaf,#3dbb6e);color:#fff;border-color:var(--ink)}
+nav button[data-v=tracker]::before{content:"🌿 "}nav button[data-v=missions]::before{content:"🎯 "}nav button[data-v=board]::before{content:"🏆 "}nav button[data-v=impact]::before{content:"🌍 "}nav button[data-v=rewards]::before{content:"🎁 "}
+.scene{margin-top:16px;height:190px;position:relative;overflow:hidden;background:linear-gradient(#bfe6ff,#eafaf0)}.scene svg{position:absolute;inset:0;width:100%;height:100%}
+.cap{position:absolute;top:12px;left:14px;z-index:2;background:var(--card);border:3px solid var(--ink);border-radius:99px;padding:3px 12px;font-weight:800}
+#tree{transform-origin:200px 150px;transition:transform .8s}#tree circle[id]{transition:opacity .5s}
+.lf{position:absolute;bottom:30px;font-size:1.5rem;animation:up 1.2s ease-out forwards}
+@keyframes up{from{transform:translateY(40px);opacity:1}to{transform:translateY(-90px) rotate(50deg);opacity:0}}
+.streak,.lvl{color:#26332e}.streak{background:linear-gradient(135deg,#ffe3a3,#ffb88a)}.lvl{background:linear-gradient(135deg,#bfe6ff,#c4f3d8)}.lvl h3{font-size:1.3rem}
+.dots{display:flex;gap:5px;margin-top:8px}.dots i{width:16px;height:16px;border:2px solid #26332e;border-radius:50%;background:#fff}.dots i.on{background:#ff7a45}
+.bar{height:24px;background:#fff}.bar i{background:repeating-linear-gradient(-45deg,#3dbb6e 0 10px,#56d487 10px 20px);border-right:3px solid #26332e}
+.act{border-radius:22px;box-shadow:0 6px 0 var(--ink)}.act:nth-child(odd){transform:rotate(-1.5deg)}.act:nth-child(even){transform:rotate(1.5deg)}.act:hover{transform:translateY(-3px) rotate(0)}.act:active{transform:translateY(5px);box-shadow:0 1px 0 var(--ink)}
+.act span{font-size:2.6rem}.act small{background:var(--ink);color:var(--card);border:0;border-radius:99px;padding:2px 10px}
+.badge::before{content:"🏅 "}.badge.lock::before{content:"🔒 "}
+.lb li:nth-child(1){background:#ffe58a;color:#26332e}.lb li:nth-child(2){background:#e3e8ee;color:#26332e}.lb li:nth-child(3){background:#f5cfae;color:#26332e}.lb li.me{background:#3dbb6e;color:#fff;border:2px solid var(--ink)}
+.m{position:relative}
+nav button[data-v=ai]::before{content:"🤖 "}

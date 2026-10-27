@@ -1,0 +1,17 @@
+/* SUSTAINX | BASE: theme colours, page background, layout, cards, navbar */
+/* ===== 1. THEME COLOURS & BASE ===== */
+:root{--bg:#fdf1f7;--card:#fff;--ink:#2b1f3a;--mint:#bdf0d6;--pink:#ffc4e1;--lilac:#d9cbff;--sky:#bfe3ff;--butter:#fff0a8;--green:#2fb27a;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1d1528;--card:#2a2038;--ink:#fbeefa;--mint:#2d6b52;--pink:#8a3d68;--lilac:#5a4796;--sky:#2f5f8a;--butter:#8a7a2c}}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Bricolage Grotesque",system-ui,sans-serif;background-image:radial-gradient(var(--lilac) 1.5px,transparent 1.5px);background-size:26px 26px}
+/* ===== 2. LAYOUT, CARDS & NAVBAR ===== */
+.wrap{max-width:980px;margin:0 auto;padding:16px}
+.box{background:var(--card);border:3px solid var(--ink);border-radius:20px;box-shadow:5px 5px 0 var(--ink)}
+nav{display:flex;align-items:center;gap:8px;padding:10px 14px;flex-wrap:wrap}
+.logo{font-weight:800;font-size:1.25rem;margin-right:auto}
+nav button,.chip{font:inherit;font-weight:600;border:2px solid transparent;background:none;color:var(--ink);padding:6px 14px;border-radius:99px;cursor:pointer}
+nav button.on{background:var(--butter);border-color:var(--ink)}
+nav button:focus-visible,.act:focus-visible,.m:focus-visible{outline:3px solid var(--green);outline-offset:2px}
+h1,h2,h3{margin:0}h2{font-size:1.4rem;margin:22px 0 10px}

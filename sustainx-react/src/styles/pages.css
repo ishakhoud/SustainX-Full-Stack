@@ -1,0 +1,25 @@
+/* SUSTAINX | PAGES: missions, impact, rewards, toast, tab views */
+/* ===== 5. MISSIONS, IMPACT, TOAST & VIEWS ===== */
+.missions{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.m{font:inherit;color:var(--ink);text-align:left;padding:16px;cursor:pointer;background:var(--card)}
+.m.done{background:var(--mint)}.m.done h3{text-decoration:line-through}
+.tag{font-size:.75rem;font-weight:800;border:2px solid var(--ink);border-radius:8px;padding:1px 7px;background:var(--lilac)}
+.m p{margin:6px 0 0}
+.impact{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:8px}
+.impact div{padding:14px;text-align:center}.impact b{font-size:1.8rem;display:block}
+.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translate(-50%,120px);background:var(--ink);color:var(--bg);padding:10px 18px;border-radius:99px;font-weight:600;transition:transform .3s;z-index:40}
+.toast.show{transform:translate(-50%,0)}
+.view{display:none}.view.on{display:block}
+.tag.sp{background:var(--butter)}
+.rw{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.sharebtn{display:block;margin-top:12px;background:var(--card);border:2px solid var(--ink)!important;box-shadow:2px 2px 0 var(--ink)}
+.ecobot{max-width:680px;padding:18px;margin:0 auto 20px}
+.ecobot-messages{display:flex;flex-direction:column;gap:10px;min-height:180px;max-height:340px;overflow:auto;padding:12px 0}
+.ecobot-message{max-width:85%;padding:10px 14px;border:2px solid var(--ink);border-radius:16px;line-height:1.4}
+.ecobot-message.bot{align-self:flex-start;background:var(--mint)}
+.ecobot-message.you{align-self:flex-end;background:var(--butter)}
+.ecobot-sources{margin-top:8px;padding-top:6px;border-top:1px solid currentColor;font-size:.78rem;opacity:.8}
+.ecobot-form{display:flex;gap:8px}
+.ecobot-form input{flex:1;min-width:0;font:inherit;padding:10px 14px;border:2px solid var(--ink);border-radius:14px;background:var(--bg);color:var(--ink)}
+.ecobot-form button{font:inherit;font-weight:700;padding:8px 16px;border:2px solid var(--ink);border-radius:14px;background:var(--mint);color:var(--ink);cursor:pointer}
+.ecobot-form button:disabled{opacity:.55;cursor:wait}

@@ -1,0 +1,15 @@
+/* SUSTAINX | LOGIN SCREEN & POP-UP MODALS (share, custom action) */
+/* ===== 6. LOGIN SCREEN & POP-UP MODALS ===== */
+.loginwrap{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;padding:20px;z-index:20;background:var(--bg);background-image:radial-gradient(var(--lilac) 1.5px,transparent 1.5px);background-size:26px 26px}
+.lcard{max-width:380px;width:100%;padding:26px}.lcard input{font:inherit;width:100%;padding:10px 14px;margin:12px 0;border:3px solid var(--ink);border-radius:14px;background:var(--bg);color:var(--ink)}
+.lcard button{font:inherit;font-weight:800;width:100%;padding:10px;margin-top:8px;border:3px solid var(--ink);border-radius:14px;box-shadow:3px 3px 0 var(--ink);cursor:pointer;color:var(--ink)}
+.lcard a{display:block;text-align:center;text-decoration:none;color:var(--ink);font-weight:800;padding:10px;margin-top:8px;border:3px solid var(--ink);border-radius:14px;box-shadow:3px 3px 0 var(--ink)}
+.lcard textarea{font:inherit;width:100%;height:84px;margin-top:10px;padding:10px;border:3px solid var(--ink);border-radius:14px;background:var(--bg);color:var(--ink);resize:none}
+.lcard select{font:inherit;width:100%;padding:10px 14px;margin-bottom:4px;border:3px solid var(--ink);border-radius:14px;background:var(--bg);color:var(--ink)}
+.auth-modes{display:flex;gap:8px;margin:14px 0}
+.lcard .auth-modes button{width:50%;margin:0;padding:8px;background:var(--card);box-shadow:none}
+.lcard .auth-modes button.selected{background:var(--lilac)}
+.lcard label{display:block;font-weight:700;margin-top:10px}
+.lcard .auth-error{padding:9px 12px;border:2px solid #a3223b;border-radius:12px;background:#ffe1e6;color:#71172a}
+.lcard .auth-note{font-size:.85rem;opacity:.8;margin:14px 0 0}
+.lcard button:disabled{opacity:.6;cursor:wait}
