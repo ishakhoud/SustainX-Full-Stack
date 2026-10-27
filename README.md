@@ -15,3 +15,7 @@ npm install
 npm run dev
 
 3)EcoBot needs an extra step: install Ollama and download the configured gemma3:1b model. Without that, the rest of the app may run, but EcoBot chat won’t. So install these required package to run EcoBot locally,
+install this 
+ollama pull gemma3:1b
+while running ollama you can use chatBot in the app
+
